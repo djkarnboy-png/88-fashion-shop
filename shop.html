@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — 8:8</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="shop">
+
+  <div class="grain"></div>
+  <div class="cursor-light"></div>
+
+  <nav class="nav scrolled">
+    <a href="https://8-8-omega.vercel.app" class="nav-logo">8<span>:</span>8</a>
+    <div class="nav-menu">
+      <a href="https://8-8-omega.vercel.app" class="nav-link">Home</a>
+      <a href="#collection" class="nav-link active">Collection</a>
+    </div>
+    <div class="nav-actions">
+      <div class="search-wrap">
+        <input type="text" class="search-input" placeholder="Search..." aria-label="Search products">
+        <div class="search-results"></div>
+      </div>
+      <a href="account.html" class="nav-icon" aria-label="Wishlist">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span class="badge" data-wishlist-count>0</span>
+      </a>
+      <button class="nav-icon nav-cart-trigger" type="button" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="badge" data-cart-count>0</span>
+      </button>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="page-header" id="collection">
+    <div class="container">
+      <span class="section-label">Collection</span>
+      <h1 class="section-title">Shop All</h1>
+    </div>
+  </header>
+
+  <main class="container shop-layout">
+    <aside class="shop-filters">
+      <h3>Categories</h3>
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Graphic Tees">Graphic Tees</button>
+      <button class="filter-btn" data-category="Knitwear">Knitwear</button>
+      <button class="filter-btn" data-category="Hoodies">Hoodies</button>
+      <button class="filter-btn" data-category="Outerwear">Outerwear</button>
+    </aside>
+    <div>
+      <div class="shop-toolbar">
+        <span class="shop-count"></span>
+        <select class="sort-select" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="new">New Arrivals</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+      <div class="shop-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 8:8. All rights reserved.</span>
+        <a href="index.html" class="nav-logo">8<span>:</span>8</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal">
+      <button class="modal-close" data-close="quickViewModal">&times;</button>
+      <div class="quick-view">
+        <img src="" alt="" class="qv-image">
+        <div class="qv-content">
+          <h2 class="qv-name"></h2>
+          <p class="qv-price"></p>
+          <div class="qv-rating"></div>
+          <p class="qv-desc"></p>
+          <span class="size-guide-link" data-size-guide>Size Guide</span>
+          <div class="qv-sizes"></div>
+          <button class="btn btn--primary btn--full qv-add">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay size-guide-modal" id="sizeGuideModal">
+    <div class="modal">
+      <button class="modal-close" data-close="sizeGuideModal">&times;</button>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">Size Guide</h2>
+      <table class="size-table">
+        <thead><tr><th>Size</th><th>Chest (in)</th><th>Length (in)</th><th>Shoulder (in)</th></tr></thead>
+        <tbody>
+          <tr><td>XS</td><td>34-36</td><td>26</td><td>16</td></tr>
+          <tr><td>S</td><td>36-38</td><td>27</td><td>17</td></tr>
+          <tr><td>M</td><td>38-40</td><td>28</td><td>18</td></tr>
+          <tr><td>L</td><td>40-42</td><td>29</td><td>19</td></tr>
+          <tr><td>XL</td><td>42-44</td><td>30</td><td>20</td></tr>
+          <tr><td>XXL</td><td>44-46</td><td>31</td><td>21</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/supabase.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

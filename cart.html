@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — 8:8</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="cart">
+
+  <div class="grain"></div>
+
+  <nav class="nav scrolled">
+    <a href="https://8-8-omega.vercel.app" class="nav-logo">8<span>:</span>8</a>
+    <div class="nav-menu">
+      <a href="https://8-8-omega.vercel.app" class="nav-link">Home</a>
+      <a href="shop.html#collection" class="nav-link">Collection</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-icon nav-cart-trigger" type="button" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="badge" data-cart-count>0</span>
+      </button>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1 class="section-title">Shopping Cart</h1>
+    </div>
+  </header>
+
+  <main class="container cart-layout">
+    <div class="cart-items"></div>
+    <div class="cart-summary"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 8:8. All rights reserved.</span>
+        <a href="shop.html">Continue Shopping</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/supabase.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

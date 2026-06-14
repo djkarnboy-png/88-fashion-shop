@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8:8 — Designed Between Moments</title>
+  <meta name="description" content="8:8 — Modern luxury streetwear reimagined through precision, balance, and individuality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-logo">8<span>:</span>8</div>
+  </div>
+
+  <!-- Effects -->
+  <div class="grain"></div>
+  <div class="cursor-light"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="https://8-8-omega.vercel.app" class="nav-logo">8<span>:</span>8</a>
+    <div class="nav-menu">
+      <a href="https://8-8-omega.vercel.app" class="nav-link">Home</a>
+      <a href="#collection" class="nav-link">Collection</a>
+    </div>
+    <div class="nav-actions">
+      <div class="search-wrap">
+        <input type="text" class="search-input" placeholder="Search..." aria-label="Search products">
+        <div class="search-results"></div>
+      </div>
+      <a href="account.html" class="nav-icon" aria-label="Wishlist">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span class="badge" data-wishlist-count>0</span>
+      </a>
+      <button class="nav-icon nav-cart-trigger" type="button" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="badge" data-cart-count>0</span>
+      </button>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=80" alt="8:8 statement piece">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Designed Between Moments.</h1>
+      <p class="hero__subtitle">Streetwear reimagined through precision, balance, and individuality.</p>
+      <div class="hero__cta">
+        <a href="shop.html" class="btn btn--primary">Shop Collection</a>
+        <a href="#lookbook" class="btn btn--outline">Explore Lookbook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Collection -->
+  <section class="featured" id="collection">
+    <div class="container">
+      <span class="section-label reveal">Collections</span>
+      <h2 class="section-title reveal">Featured Collection</h2>
+      <div class="featured-grid"></div>
+    </div>
+  </section>
+
+  <!-- Brand Story -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual reveal-left" data-parallax="0.2">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="8:8 brand story">
+        </div>
+        <div class="reveal-right">
+          <span class="section-label">Our Philosophy</span>
+          <h2 class="section-title">The Meaning of 8:8</h2>
+          <div class="story-words">
+            <span class="story-word active">Balance.</span>
+            <span class="story-word">Infinity.</span>
+            <span class="story-word">Repetition.</span>
+            <span class="story-word">Individual expression.</span>
+          </div>
+          <p class="story-desc">Two eights. One symbol. Infinite interpretations. 8:8 exists at the intersection of symmetry and rebellion — where precision meets creative freedom.</p>
+          <div class="story-values">
+            <div class="story-value reveal">
+              <h4>Balance</h4>
+              <p>The symmetry of 8:8 — two halves in perfect equilibrium.</p>
+            </div>
+            <div class="story-value reveal">
+              <h4>Infinity</h4>
+              <p>Turned sideways, eight becomes forever. Endless expression.</p>
+            </div>
+            <div class="story-value reveal">
+              <h4>Repetition</h4>
+              <p>Patterns that echo. Design as rhythm and ritual.</p>
+            </div>
+            <div class="story-value reveal">
+              <h4>Expression</h4>
+              <p>Your moment. Your interpretation. Your 8:8.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="new-arrivals">
+    <div class="container">
+      <span class="section-label reveal">Just Dropped</span>
+      <h2 class="section-title reveal">New Arrivals</h2>
+      <div class="new-arrivals-grid"></div>
+    </div>
+  </section>
+
+  <!-- Editorial Lookbook -->
+  <section class="lookbook" id="lookbook">
+    <div class="container">
+      <span class="section-label reveal">Editorial</span>
+      <h2 class="section-title reveal">Lookbook</h2>
+      <div class="lookbook-grid">
+        <div class="lookbook-item large reveal-scale" data-parallax="0.15">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1200&q=80" alt="Urban Balance">
+          <div class="lookbook-item__label"><h3>Urban Balance</h3></div>
+        </div>
+        <div class="lookbook-item reveal" data-parallax="0.1">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728fa4b65?w=800&q=80" alt="Night Shift">
+          <div class="lookbook-item__label"><h3>Night Shift</h3></div>
+        </div>
+        <div class="lookbook-item reveal" data-parallax="0.1">
+          <img src="https://images.unsplash.com/photo-1445205170230-053a830a5ebb?w=800&q=80" alt="Concrete Dreams">
+          <div class="lookbook-item__label"><h3>Concrete Dreams</h3></div>
+        </div>
+        <div class="lookbook-item medium reveal-scale" data-parallax="0.12">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80" alt="Silent Motion">
+          <div class="lookbook-item__label"><h3>Silent Motion</h3></div>
+        </div>
+        <div class="lookbook-item large reveal" data-parallax="0.15">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=80" alt="Between Moments">
+          <div class="lookbook-item__label"><h3>Between Moments</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="bestsellers">
+    <div class="container">
+      <span class="section-label reveal">Top Picks</span>
+      <h2 class="section-title reveal">Best Sellers</h2>
+      <div class="carousel-wrap">
+        <div class="carousel-track"></div>
+        <div class="carousel-nav">
+          <button class="carousel-prev" aria-label="Previous">&#8592;</button>
+          <button class="carousel-next" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-box reveal-scale">
+        <h2 class="section-title">Join the 8:8 Community.</h2>
+        <p>Exclusive drops, early access, and editorial content — delivered to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required aria-label="Email address">
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">8<span>:</span>8</a>
+          <p>Modern luxury streetwear with a unique artistic edge. Designed between moments.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="shop.html">All Products</a>
+          <a href="shop.html?category=Graphic%20Tees">Graphic Tees</a>
+          <a href="shop.html?category=Knitwear">Knitwear</a>
+          <a href="shop.html?category=Hoodies">Hoodies</a>
+          <a href="shop.html?category=Outerwear">Outerwear</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="#story">Our Story</a>
+          <a href="#" data-size-guide>Size Guide</a>
+          <a href="checkout.html">Shipping</a>
+          <a href="checkout.html">Returns</a>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="account.html">Sign In</a>
+          <a href="cart.html">Cart</a>
+          <a href="account.html">Wishlist</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 8:8. All rights reserved.</span>
+        <span>Designed with precision.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal">
+      <button class="modal-close" data-close="quickViewModal">&times;</button>
+      <div class="quick-view">
+        <img src="" alt="" class="qv-image">
+        <div class="qv-content">
+          <h2 class="qv-name"></h2>
+          <p class="qv-price"></p>
+          <div class="qv-rating"></div>
+          <p class="qv-desc"></p>
+          <span class="size-guide-link" data-size-guide>Size Guide</span>
+          <div class="qv-sizes"></div>
+          <button class="btn btn--primary btn--full qv-add">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div class="modal-overlay size-guide-modal" id="sizeGuideModal">
+    <div class="modal">
+      <button class="modal-close" data-close="sizeGuideModal">&times;</button>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">Size Guide</h2>
+      <table class="size-table">
+        <thead>
+          <tr><th>Size</th><th>Chest (in)</th><th>Length (in)</th><th>Shoulder (in)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>XS</td><td>34-36</td><td>26</td><td>16</td></tr>
+          <tr><td>S</td><td>36-38</td><td>27</td><td>17</td></tr>
+          <tr><td>M</td><td>38-40</td><td>28</td><td>18</td></tr>
+          <tr><td>L</td><td>40-42</td><td>29</td><td>19</td></tr>
+          <tr><td>XL</td><td>42-44</td><td>30</td><td>20</td></tr>
+          <tr><td>XXL</td><td>44-46</td><td>31</td><td>21</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/supabase.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
